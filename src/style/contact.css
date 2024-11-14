@@ -62,5 +62,26 @@
     object-fit: cover;
     height: 3rem;
     width: 3rem;
+    aspect-ratio: 3/2;
     margin: 0 0.75rem;
+}
+.linkes {
+    object-fit: cover;
+    height: 2.9rem;
+    width: 2.9rem;
+    
+    margin: 0 0.75rem;
+   
+
+
+}
+.linkies{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    aspect-ratio: 3/2;
+    margin: 0 0.75rem;
+    mix-blend-mode: color-burn;
+   
+
 }

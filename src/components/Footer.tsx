@@ -4,7 +4,7 @@ import '../style/footer.css'
 const Footer = () => {
   return (
    <footer className="footer">
-    CopyRight #123: 2024 Usman Naseem. All Right Reserved
+    @CopyRight 2024 Usman Naseem. All Right Reserved
      </footer>
   )
 }

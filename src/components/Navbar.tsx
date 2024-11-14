@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React, { useState } from "react";
 
 import "../style/navbar.css";
-import logo from "../../public/U.png";
+import logo from "../../public/Usman.png";
 import { Link } from "react-scroll";
 import contactinf from "../../public/contact.png";
 import Menu from "../../public/menu.png";
@@ -20,10 +20,10 @@ const Navbar = () => {
         <Link activeClass="active" to="intro" spy={true} offset={-100} duration={500} className="desktopMenuListItems">
           Home
         </Link>
-        <Link activeClass="active" to="skills" spy={true} offset={-60} duration={500} className="desktopMenuListItems">
+        <Link  activeClass="active" to="skills" spy={true} offset={-60} duration={500} className="desktopMenuListItems">
           About
         </Link>
-        <Link activeClass="active" to="/" spy={true} offset={-30} duration={500}  className="desktopMenuListItems"   onClick={() => {
+        <Link activeClass="active" to="/" spy={true} offset={-200} duration={500}  className="desktopMenuListItems"   onClick={() => {
           document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
         }}   >
           Contact

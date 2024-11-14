@@ -2,9 +2,11 @@
 import React, { useRef } from "react";
 import FaceBookIcon from "../../public/facebook-icon.png";
 import InstagramIcon from "../../public/instagram.png";
-import LinkdeinIcon from "../../public/317750_linkedin_icon (4).png";
-import GithubIcon from "../../public/github .png";
+import LinkdeinIcon from "../../public/linkdin.png";
+import GithubIcon from "../../public/github.png";
 import "../style/contact.css";
+import Image from 'next/image';
+
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -69,34 +71,42 @@ const Contact = () => {
           <div className="links">
             {/* LinkedIn Link */}
             <a href="https://www.linkedin.com/in/muhammad-usman-naseem-295720271/" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image
                 src={LinkdeinIcon.src} // Access the `src` property of the imported image
                 alt="LinkedIn"
-                className="link"
+                className="linkes"
+                width={40} // Provide width in pixels
+                height={40} // Provide height in pixels
               />
             </a>
             {/* GitHub Link */}
             <a href="https://github.com/usmannaseem23" target="_blank" rel="noopener noreferrer">
-              <img
-                src={GithubIcon.src} // Access the `src` property of the imported image
+              <Image
+                src={GithubIcon.src} 
                 alt="GitHub"
-                className="link"
+                className="linkies"
+                width={40} 
+                height={40}
               />
             </a>
             {/* Facebook Link */}
             <a href="https://www.facebook.com/profile.php?id=100086418654475" target="_blank" rel="noopener noreferrer">
-              <img
-                src={FaceBookIcon.src} // Access the `src` property of the imported image
+              <Image
+                src={FaceBookIcon.src}
                 alt="Facebook"
                 className="link"
+                width={40} 
+                height={40}
               />
             </a>
             {/* Instagram Link */}
             <a href="https://www.instagram.com/usman_naseem23/" target="_blank" rel="noopener noreferrer">
-              <img
-                src={InstagramIcon.src} // Access the `src` property of the imported image
+              <Image
+                src={InstagramIcon.src}
                 alt="Instagram"
                 className="link"
+                width={40} 
+                height={40}
               />
             </a>
           </div>
